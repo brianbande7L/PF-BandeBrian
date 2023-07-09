@@ -339,7 +339,6 @@ footer .imagenes{
 #contacto-messi .boton-enviar:hover{
     background: #e4b20d;
     font-weight: bold;
-    font-size: 17px;
-    transform: scale(1.08);
+    transform: scale(1.04);
 }
 }
