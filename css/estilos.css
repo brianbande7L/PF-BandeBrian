@@ -333,9 +333,13 @@ footer .imagenes{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     background: #D4AF37;
+    transition: 1s all;
 }
 
 #contacto-messi .boton-enviar:hover{
-    background: #d4c07d;
+    background: #e4b20d;
+    font-weight: bold;
+    font-size: 17px;
+    transform: scale(1.08);
 }
 }
