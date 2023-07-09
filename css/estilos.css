@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-nav{
+    width: 100%;
+    position: fixed;
+    padding: 18px 0px;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.logo{
+    margin: 0 30px;
+    font-size: 25px;
+}
+.nav-margin{
+    margin: 0 30px;
+    font-size: 17px;
+}
+.dropdown-color{ 
+    color: #D4AF37;
+}
+
+
+@media (min-width: 720px){
+
+   .hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url(../imagenes/messifoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+
+.titulo__hero{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.parrafo__hero{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 60%;
+}
+
+.galeria__container {
+    display: grid;
+}
+
+.galeria__titulo{
+    justify-self: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 40px auto;   
+}
+
+.galeria__imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 40px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    transition: all .9s;
+}
+
+.foto__galeria{
+    width: 340px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.foto__galeria:hover{
+    transform: scale(1.08);
+    transition-duration: 1s;
+    box-shadow:  0 0 0 5px #ded7df;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    background-color: beige;
+    margin: 0 ;
+    z-index: 5;
+}
+
+footer p{
+    margin: 0;
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+footer .conteiner{
+text-align: center;
+}
+
+footer .imagenes{
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/** INDEX.HTML, HEADER Y FOOTER **/
+
+.hero--barcelona{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../imagenes/messihome.jpg);
+}
+
+
+.titulo--hero{
+    font-size: 50px;
+    width: 100%;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.card__container{
+    display: flex;
+    padding: 100px ;
+    justify-content: center;
+}
+
+.card__textos{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.card__titulo{
+    color: #D4AF37;
+    font-size: 40px;
+}
+
+.card__parrafo{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.card__img{
+    background-image: url(../imagenes/messi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin: 0px 50px;
+}
+
+.card--barca{
+    background-color: rgb(52, 44, 87);
+}
+
+.card--parrafo-blanco{
+    font-weight: bold;
+    display: flex;
+    color: rgb(245,245,245);
+    width: 100%;
+}
+
+.card--barca-partidos-img{
+    background-image: url(../imagenes/crack.png)
+}
+
+
+.card--barca-goles-img{
+    background-image: url(../imagenes/messigoles.png);
+}
+                                   
+.hero--psg{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+     url(../imagenes/messimenupsg3.jpg);
+}
+
+.card--psg-tiulos-img{
+    background-image: url(../imagenes/messititulospsg.png);
+}
+
+.card-psg{
+    background-color: rgb(52, 44, 87);
+} 
+
+.card--psg-partidos-img{
+    background-image: url(../imagenes/partidosmessipsg.png);
+}
+
+.card--psg{
+    background-color: rgb(52, 44, 87);
+}
+
+
+.card--psg-goles-img{
+    background-image: url(../imagenes/messigolespsg.jpg);
+}
+
+.hero--seleccion{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+     url(../imagenes/messiseleccionmenu.png);
+}
+
+.card--seleccion-titulos-img{
+    background-image: url(../imagenes/messibesocopa.png);
+}
+
+.card--seleccion{
+    background-color: rgb(52, 44, 87);
+} 
+
+
+.card--seleccion-partidos-img{
+    background-image: url(../imagenes/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
+
+}
+
+
+.card--seleccion-goles-img{
+    background-image: url(../imagenes/messicopamundo.png);
+}
+
+#contacto-messi{
+    height: 100vh;
+    padding: 100px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../imagenes/menu-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacto-messi h2{
+    color: #D4AF37;
+    font-size: 40px;
+    margin: 30px 0px;
+}
+
+#contacto-messi p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    display: fixed;
+}
+
+#contacto-messi .form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto-messi .conteiner-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#contacto-messi .campo{
+    font-size: 15px;
+    width: 60vh;
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#contacto-messi .mensaje-contacto{
+    font-size: 15px;
+    width: 60vh;
+    height: 20vh;
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#contacto-messi .boton-enviar{
+    position: relative;
+    left: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 23vh;
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: #D4AF37;
+}
+
+#contacto-messi .boton-enviar:hover{
+    background: #d4c07d;
+}
+}
