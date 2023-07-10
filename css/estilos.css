@@ -37,6 +37,37 @@ body{
 }
 
 
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    background-color: beige;
+    margin: 0 ;
+    z-index: 5;
+}
+
+footer p{
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+footer .conteiner{
+text-align: center;
+}
+
+footer .imagenes{
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/** HEADER y FOOTER ADAPTADOS A RESPONSIVE**/
+
 @media(min-width: 1024px){
 
    .hero__container{
@@ -105,36 +136,6 @@ body{
     transition-duration: 0.8s;
     box-shadow:  0 0 0 5px #D4AF37;
 }
-
-footer img{
-    width: 30px;
-    height: 30px;
-}
-
-footer{
-    background-color: beige;
-    margin: 0 ;
-    z-index: 5;
-}
-
-footer p{
-    margin: 0;
-    font-size: 10px;
-    padding-top: 20px;
-}
-
-footer .conteiner{
-text-align: center;
-}
-
-footer .imagenes{
-    padding-top: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-/** INDEX.HTML, HEADER Y FOOTER **/
 
 .hero--barcelona{
     background-image: linear-gradient(
@@ -364,7 +365,7 @@ footer .imagenes{
     }
 
     .titulo__hero{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         color: rgb(255, 255, 255);
     }
@@ -375,5 +376,42 @@ footer .imagenes{
         color: rgb(255, 255, 255);
         width: 60%;
     }
+
+    .galeria__container {
+        display: grid;
+    }
+    
+    .galeria__titulo{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', sans-serif;
+        margin: 20px auto;   
+    }
+    
+    .galeria__imagenes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px 20px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        transition: all .9s;
+    }
+    
+    .foto__galeria{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .foto__galeria:hover{
+        transform: scale(1.02);
+        transition-duration: 0.8s;
+        box-shadow:  0 0 0 3px #D4AF37;
+    }
+
+
 
 }
