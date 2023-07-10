@@ -37,7 +37,7 @@ body{
 }
 
 
-@media (min-width: 720px){
+@media(min-width: 1024px){
 
    .hero__container{
     display: flex;
@@ -76,7 +76,8 @@ body{
 }
 
 .galeria__titulo{
-    justify-self: center;
+    width: 100%;
+    text-align: center;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Bebas Neue', sans-serif;
@@ -341,4 +342,38 @@ footer .imagenes{
     font-weight: bold;
     transform: scale(1.04);
 }
+}
+
+@media(max-width: 760px){
+    .hero__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url(../imagenes/messifoto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+
+    .titulo__hero{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+    
+    .parrafo__hero{
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        width: 60%;
+    }
+
 }
