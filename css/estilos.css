@@ -437,7 +437,6 @@ footer .imagenes{
         display: flex;
         padding: 30px ;
         justify-content: center;
-        height: 60vh;
     }
 
     .card__textos{
