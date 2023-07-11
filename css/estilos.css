@@ -93,6 +93,7 @@ footer .imagenes{
     font-size: 50px;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    margin-bottom: 30px;
 }
 
 .parrafo__hero{
@@ -146,12 +147,15 @@ footer .imagenes{
     ,url(../imagenes/messihome.jpg);
 }
 
-
 .titulo--hero{
     font-size: 50px;
     width: 100%;
     align-items: center;
     font-family: 'IBM Plex Mono', monospace;
+}
+
+.titulos__barcelona{
+    display: none;
 }
 
 .card__container{
@@ -175,7 +179,7 @@ footer .imagenes{
 }
 
 .card__parrafo{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -222,9 +226,6 @@ footer .imagenes{
     background-image: url(../imagenes/messititulospsg.png);
 }
 
-.card-psg{
-    background-color: rgb(52, 44, 87);
-} 
 
 .card--psg-partidos-img{
     background-image: url(../imagenes/partidosmessipsg.png);
@@ -359,15 +360,17 @@ footer .imagenes{
             rgba(0,0,0,0.5)
         )
         , url(../imagenes/messifoto.jpg);
-        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
         align-items: center;
     }
 
     .titulo__hero{
-        font-size: 25px;
+        font-size: 35px;
         font-weight: bold;
         color: rgb(255, 255, 255);
+        margin: 30px 0;
+        width: 30%;
     }
     
     .parrafo__hero{
@@ -401,7 +404,7 @@ footer .imagenes{
     }
     
     .foto__galeria{
-        width: 300px;
+        width: 250px;
         height: 200px;
         object-fit: cover;
     }
@@ -412,6 +415,95 @@ footer .imagenes{
         box-shadow:  0 0 0 3px #D4AF37;
     }
 
+    .hero--barcelona{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudobarca.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
 
+    .titulo--hero{
+        font-size: 20px;
+        width: 100%;
+        align-items: center;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .card__container{
+        display: flex;
+        padding: 30px ;
+        justify-content: center;
+        height: 60vh;
+    }
+
+    .card__textos{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .card__titulo{
+        color: #D4AF37;
+        font-size: 30px;
+    }
+
+    .card__parrafo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .titulos__barcelona{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .card--barca{
+        background-color: rgb(52, 44, 87);
+    }
+
+    .hero--psg{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudopsg.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
+
+    .card--psg{
+        background-color: rgb(52, 44, 87);
+
+    }
+
+    .card--parrafo-blanco{
+        font-weight: bold;
+        display: flex;
+        color: rgb(245,245,245);
+        width: 100%;
+    }
+
+    .hero--seleccion{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudoseleccion.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
+
+    .card--seleccion{
+        background-color: rgb(52, 44, 87);
+    }
 
 }
