@@ -506,4 +506,8 @@ footer .imagenes{
         background-color: rgb(52, 44, 87);
     }
 
+    .card__img{
+        display: none;
+    }
+
 }
