@@ -1,0 +1,495 @@
+@use "_reseteo.scss";
+@use "_colores.scss";
+
+.header-nav{
+    width: 100%;
+    position: fixed;
+    padding: 18px 0px;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.logo{
+    margin: 0 30px;
+    font-size: 25px;
+}
+.nav-margin{
+    margin: 0 30px;
+    font-size: 17px;
+}
+
+.dropdown-color{ 
+    color: colores.$color-primario;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer{
+    background-color: colores.$color-footer;
+    margin: 0 ;
+    z-index: 5;
+
+    .conteiner{
+        text-align: center;
+    }
+
+    p{
+        margin: 0;
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    
+    .imagenes{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+        
+    img{
+        width: 30px;
+        height: 30px;
+        margin: 10px 5px;                                                              
+    }
+}
+
+.hero{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url(../imagenes/messifoto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+
+    &__titulo{
+        font-size: 50px;
+        font-weight: bold;
+        color: colores.$color-textos;
+        margin-bottom: 30px;
+    }
+
+    &__parrafo{
+        font-size: 20px;
+        font-weight: bold;
+        color: colores.$color-textos;
+        width: 60%;
+    }
+}
+
+.galeria{
+    &__container {
+        display: grid;
+    }
+
+    &__titulo{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', sans-serif;
+        margin: 40px auto;   
+    }
+
+    &__imagenes{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px 40px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        transition: all .9s;
+    }
+
+    &__foto{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__foto:hover{
+        transform: scale(1.05);
+        transition-duration: 0.8s;
+        box-shadow:  0 0 0 5px colores.$color-primario;
+    }
+}
+
+.hero{
+    &--barcelona{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../imagenes/messihome.jpg);
+    }
+
+    &--titulo{
+            font-size: 50px;
+            width: 100%;
+            align-items: center;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+    }
+
+    .titulos__barcelona{
+        display: none;
+    }
+
+    .card{
+        &__container{
+            display: flex;
+            padding: 100px ;
+            justify-content: center;
+        }
+
+        &__textos{
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 50px;
+        }
+
+        &__titulo{
+            color: colores.$color-primario;
+            font-size: 40px;
+        }
+
+        &__parrafo{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        &__img{
+            background-image: url(../imagenes/messi.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+            margin: 0px 50px;
+        }
+
+        &--barca{
+            background-color: colores.$color-background-card;
+        }
+
+        &--parrafo-blanco{
+            font-weight: bold;
+            display: flex;
+            color: colores.$color-textos;
+            width: 100%;
+        }
+
+        &--barca-partidos-img{
+            background-image: url(../imagenes/crack.png)
+        }
+
+        &--card-barca-goles-img{
+            background-image: url(../imagenes/messigoles.png);
+        }
+    }
+
+    .hero{
+        &--psg{
+            background-image:           linear-gradient(
+             0deg,
+             rgba(0,0,0,0.5),
+             rgba(0,0,0,0.5)
+            ),
+          url(../imagenes/messimenupsg3.jpg);
+        }
+    }
+
+    .card{
+        &--psg-titulos-img{
+            background-image: url(../imagenes/messititulospsg.png);
+        }
+
+        &--psg-partidos-img{
+            background-image: url(../imagenes/partidosmessipsg.png);
+        }
+
+        &--psg{
+            background-color: colores.$color-background-card;
+        }
+
+        &--psg-goles-img{
+            background-image: url(../imagenes/messigolespsg.jpg);
+        }
+    }
+
+    .hero{
+        &--seleccion{
+            background-image: linear-gradient(
+             0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),
+             url(../imagenes/messiseleccionmenu.png);
+        }
+    }
+
+    .card{
+        &--seleccion-titulos-img{
+            background-image: url(../imagenes/messibesocopa.png);
+        }
+
+        &--seleccion-partidos-img{
+            background-image: url(../imagenes/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
+        }
+
+        &--seleccion{
+            background-color: colores.$color-background-card;
+        }
+
+        &--seleccion-goles-img{
+            background-image: url(../imagenes/messicopamundo.png);
+        }
+    }
+
+    .formulario{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+         )
+        ,url(../imagenes/menu-contacto.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+    }
+
+    .form{
+        position: relative;
+        top: 150px;
+        background-color: colores.$color-textos;
+        width: 90%;
+        margin: auto;
+        max-width: 400px;
+        border-radius: 1em;
+        padding: 3em 1.5em;
+
+        &__container{
+            margin: auto;
+            width: 100%;
+            display: grid;
+            gap: 1rem;
+            grid-auto-columns: 100%;
+        }
+
+        &__tittle{
+            text-align: center;
+            font-size: 1.9rem;
+            margin-bottom: 0.4rem;
+        }
+        
+        &__input{
+            font-size: 1rem;
+            padding: 0.8em 1em;
+            outline: none;
+            border: none;
+            border: 1px solid colores.$color-borde-form;
+            border-radius: 0.2em;
+        }
+
+        &__input--message{
+            resize: none;
+            padding: 1.8em 1em;
+            margin-bottom: 0.5em;
+        }
+
+        &__cta{
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: colores.$color-boton-form;
+            color: #fff;
+            border: none;
+            font-weight: 300;
+            padding: 0.7em 0;
+            border-radius: 0.2em;
+            cursor: pointer;
+            transition: 1s all;
+        }
+
+        &__cta:hover{
+            background-color: colores.$color-boton-hover;
+            transform: scale(1.04);
+        }
+    }
+
+@media (max-width: 760px){
+    .hero{
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(
+                0deg,
+             rgba(0,0,0,0.5),
+             rgba(0,0,0,0.5)
+            )
+            , url(../imagenes/messifoto.jpg);
+            background-size: cover;
+            background-position: center center;
+            align-items: center;
+            }
+
+        &__titulo{
+            font-size: 35px;
+            font-weight: bold;
+            color: colores.$color-textos;
+            margin: 30px 0;
+            width: 30%;
+        }
+
+        &__parrafo{
+            font-size: 15px;
+            font-weight: bold;
+            color: colores.$color-textos;
+            width: 60%;
+        }
+    }
+
+    .galeria{
+        &__titulo{
+            font-size: 25px;
+            margin: 20px auto;  
+        }
+
+        &__imagenes{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px 20px;
+            margin-bottom: 50px;
+        }
+
+        &__foto{
+            width: 250px;
+            height: 200px;
+        }
+
+        &__foto:hover{
+            transform: scale(1.02);
+            transition-duration: 0.8s;
+            box-shadow:  0 0 0 3px colores.$color-primario
+        }
+    }
+
+    .hero{
+        &--barcelona{
+            background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url(../imagenes/escudobarca.jpg);
+            height: 90vh;
+            background-position: center center;
+        }
+
+        &--titulo{
+            font-size: 20px;
+            width: 100%;
+            align-items: center;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+    }
+
+    .card{
+        &__container{
+            display: flex;
+            padding: 30px ;
+            justify-content: center;
+        }
+
+        &__textos{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 20px;
+        }
+
+        &__titulo{
+            color: colores.$color-primario;
+            font-size: 30px;
+        }
+
+        &__parrafo{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+
+    .titulos__barcelona{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .card--barca{
+        background-color: colores.$color-background-card;
+    }
+
+    .hero--psg{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudopsg.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
+
+    .card{
+        &--psg{
+            background-color: colores.$color-background-card;
+        }
+
+        &--parrafo-blanco{
+            font-weight: bold;
+            display: flex;
+            color: colores.$color-textos;
+            width: 100%;
+        }
+    }
+
+    .hero--seleccion{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudoseleccion.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
+
+    .card{
+        &--seleccion{
+            background-color: colores.$color-background-card;
+        }
+
+        &__img{
+            display: none;
+        }
+    }
+}
+
+
