@@ -15,26 +15,30 @@ body {
 
 .header-nav {
   width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: bold;
   position: fixed;
   padding: 18px 0px;
-  font-weight: bold;
   z-index: 5;
 }
 
 .logo {
-  margin: 0 30px;
   font-size: 25px;
+  font-weight: bold;
+  margin: 0 30px;
 }
 
 .nav-margin {
-  margin: 0 30px;
   font-size: 17px;
+  font-weight: bold;
+  margin: 0 30px;
 }
 
 .dropdown-color {
-  color: #D4AF37;
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
+  color: #D4AF37;
 }
 
 footer {
@@ -46,15 +50,16 @@ footer .conteiner {
   text-align: center;
 }
 footer p {
-  margin: 0;
   font-size: 13px;
   font-weight: bold;
+  margin: 0;
   padding-top: 20px;
 }
 footer .imagenes {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: center;
 }
 footer img {
   width: 30px;
@@ -64,11 +69,12 @@ footer img {
 
 .hero__container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  height: 100vh;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  height: 100vh;
+  text-align: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messifoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,10 +87,11 @@ footer img {
   margin-bottom: 30px;
 }
 .hero__parrafo {
+  width: 60%;
+  height: auto;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  width: 60%;
 }
 
 .galeria__container {
@@ -92,9 +99,10 @@ footer img {
 }
 .galeria__titulo {
   width: 100%;
-  text-align: center;
+  height: auto;
   font-size: 40px;
   font-weight: bold;
+  text-align: center;
   font-family: "Bebas Neue", sans-serif;
   margin: 40px auto;
 }
@@ -122,8 +130,10 @@ footer img {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messihome.jpg);
 }
 .hero--titulo {
-  font-size: 50px;
   width: 100%;
+  height: auto;
+  font-size: 50px;
+  font-weight: 200;
   align-items: center;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -134,46 +144,52 @@ footer img {
 
 .card__container {
   display: flex;
-  padding: 100px;
   justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 100px;
 }
 .card__textos {
-  width: 50%;
-  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  text-align: center;
   margin: 0 50px;
 }
 .card__titulo {
-  color: #D4AF37;
   font-size: 40px;
+  font-weight: bold;
+  color: #D4AF37;
 }
 .card__parrafo {
   font-size: 18px;
   font-weight: bold;
 }
 .card__img {
+  width: 100%;
+  height: 400px;
   background-image: url(../imagenes/messi.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  width: 100%;
   margin: 0px 50px;
 }
 .card--barca {
   background-color: rgb(52, 44, 87);
 }
 .card--parrafo-blanco {
-  font-weight: bold;
-  display: flex;
-  color: #fff;
   width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
 .card--barca-partidos-img {
   background-image: url(../imagenes/crack.png);
 }
-.card--card-barca-goles-img {
+.card--barca-goles-img {
   background-image: url(../imagenes/messigoles.png);
 }
 
@@ -220,29 +236,33 @@ footer img {
 }
 
 .form {
+  width: 90%;
+  height: auto;
   position: relative;
   top: 150px;
   background-color: #fff;
-  width: 90%;
   margin: auto;
   max-width: 400px;
   border-radius: 1em;
   padding: 3em 1.5em;
 }
 .form__container {
-  margin: auto;
   width: 100%;
+  height: auto;
+  margin: auto;
   display: grid;
   gap: 1rem;
   grid-auto-columns: 100%;
 }
 .form__tittle {
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
-  font-size: 1.9rem;
   margin-bottom: 0.4rem;
 }
 .form__input {
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: bold;
   padding: 0.8em 1em;
   outline: none;
   border: none;
@@ -255,12 +275,11 @@ footer img {
   margin-bottom: 0.5em;
 }
 .form__cta {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
   background-color: #089FE0;
   color: #fff;
   border: none;
-  font-weight: 300;
   padding: 0.7em 0;
   border-radius: 0.2em;
   cursor: pointer;
@@ -274,31 +293,34 @@ footer img {
 @media (max-width: 760px) {
   .hero__container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    height: 100vh;
+    text-align: center;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messifoto.jpg);
     background-size: cover;
     background-position: center center;
-    align-items: center;
   }
   .hero__titulo {
+    width: 30%;
+    height: auto;
     font-size: 35px;
     font-weight: bold;
     color: #fff;
     margin: 30px 0;
-    width: 30%;
   }
   .hero__parrafo {
+    width: 60%;
+    height: auto;
     font-size: 15px;
     font-weight: bold;
     color: #fff;
-    width: 60%;
   }
   .galeria__titulo {
     font-size: 25px;
+    font-weight: 200;
     margin: 20px auto;
   }
   .galeria__imagenes {
@@ -317,32 +339,30 @@ footer img {
     box-shadow: 0 0 0 3px #D4AF37;
   }
   .hero--barcelona {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudobarca.jpg);
+    width: auto;
     height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudobarca.jpg);
     background-position: center center;
   }
   .hero--titulo {
-    font-size: 20px;
     width: 100%;
-    align-items: center;
+    height: auto;
+    font-size: 20px;
+    font-weight: 200;
     font-family: "IBM Plex Mono", monospace;
   }
   .card__container {
-    display: flex;
     padding: 30px;
-    justify-content: center;
   }
   .card__textos {
     width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: auto;
     margin: 0 20px;
   }
   .card__titulo {
-    color: #D4AF37;
     font-size: 30px;
+    font-weight: bold;
+    color: #D4AF37;
   }
   .card__parrafo {
     font-size: 15px;
@@ -356,22 +376,25 @@ footer img {
     background-color: rgb(52, 44, 87);
   }
   .hero--psg {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudopsg.jpg);
+    width: auto;
     height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudopsg.jpg);
     background-position: center center;
   }
   .card--psg {
     background-color: rgb(52, 44, 87);
   }
   .card--parrafo-blanco {
-    font-weight: bold;
-    display: flex;
-    color: #fff;
     width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
   }
   .hero--seleccion {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudoseleccion.jpg);
+    width: auto;
     height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudoseleccion.jpg);
     background-position: center center;
   }
   .card--seleccion {

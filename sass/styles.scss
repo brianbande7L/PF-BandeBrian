@@ -1,31 +1,31 @@
-@use "_reseteo.scss";
-@use "_colores.scss";
+@import "_reseteo.scss";
+@import "_colores.scss";
+@import "mixins.scss";
 
 .header-nav{
-    width: 100%;
+    @include sizes (100%, auto);
+    @include font (40px , bold);
     position: fixed;
     padding: 18px 0px;
-    font-weight: bold;
     z-index: 5;
 }
 
 .logo{
+    @include font (25px , bold);
     margin: 0 30px;
-    font-size: 25px;
 }
 .nav-margin{
+    @include font (17px , bold);
     margin: 0 30px;
-    font-size: 17px;
 }
 
 .dropdown-color{ 
-    color: colores.$color-primario;
-    font-weight: bold;
-    font-size: 18px;
+    @include font (18px , bold);
+    color: $color-primario;
 }
 
 footer{
-    background-color: colores.$color-footer;
+    background-color: $color-footer;
     margin: 0 ;
     z-index: 5;
 
@@ -34,33 +34,26 @@ footer{
     }
 
     p{
+        @include font (13px , bold);
         margin: 0;
-        font-size: 13px;
-        font-weight: bold;
         padding-top: 20px;
     }
     
     .imagenes{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        @include flexible ( flex , center , row , center);
     }
         
     img{
-        width: 30px;
-        height: 30px;
+        @include sizes (30px, 30px);
         margin: 10px 5px;                                                              
     }
 }
 
 .hero{
     &__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexible ( flex , center , column , center);
+        @include sizes (100%, 100vh);
         text-align: center;
-        height: 100vh;
-        width: 100%;
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),
@@ -73,17 +66,15 @@ footer{
     }
 
     &__titulo{
-        font-size: 50px;
-        font-weight: bold;
-        color: colores.$color-textos;
+        @include font (50px , bold);
+        color: $color-textos;
         margin-bottom: 30px;
     }
 
     &__parrafo{
-        font-size: 20px;
-        font-weight: bold;
-        color: colores.$color-textos;
-        width: 60%;
+        @include sizes (60%, auto);
+        @include font (20px , bold);
+        color: $color-textos;
     }
 }
 
@@ -93,10 +84,9 @@ footer{
     }
 
     &__titulo{
-        width: 100%;
+        @include sizes (100%, auto);
+        @include font (40px , bold);
         text-align: center;
-        font-size: 40px;
-        font-weight: bold;
         font-family: 'Bebas Neue', sans-serif;
         margin: 40px auto;   
     }
@@ -112,15 +102,14 @@ footer{
     }
 
     &__foto{
-        width: 300px;
-        height: 200px;
+        @include sizes (300px, 200px);
         object-fit: cover;
     }
 
     &__foto:hover{
         transform: scale(1.05);
         transition-duration: 0.8s;
-        box-shadow:  0 0 0 5px colores.$color-primario;
+        box-shadow:  0 0 0 5px $color-primario;
     }
 }
 
@@ -135,10 +124,10 @@ footer{
     }
 
     &--titulo{
-            font-size: 50px;
-            width: 100%;
-            align-items: center;
-            font-family: 'IBM Plex Mono', monospace;
+        @include sizes (100%, auto);
+        @include font (50px , 200);
+        align-items: center;
+        font-family: 'IBM Plex Mono', monospace;
         }
     }
 
@@ -148,61 +137,55 @@ footer{
 
     .card{
         &__container{
-            display: flex;
+            @include flexible ( flex , center , row , center);
             padding: 100px ;
-            justify-content: center;
         }
 
         &__textos{
-            width: 50%;
+            @include flexible ( flex , center , column , center);
+            @include sizes (50%, auto);
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             margin: 0 50px;
         }
 
         &__titulo{
-            color: colores.$color-primario;
-            font-size: 40px;
+            @include font (40px , bold);
+            color: $color-primario;
         }
 
         &__parrafo{
-            font-size: 18px;
-            font-weight: bold;
+            @include font (18px , bold);
         }
         &__img{
+            @include sizes (100%, 400px);
             background-image: url(../imagenes/messi.png);
             background-repeat: no-repeat;
             background-size: cover;
-            height: 400px;
-            width: 100%;
             margin: 0px 50px;
         }
 
         &--barca{
-            background-color: colores.$color-background-card;
+            background-color: $color-background-card;
         }
 
         &--parrafo-blanco{
-            font-weight: bold;
-            display: flex;
-            color: colores.$color-textos;
-            width: 100%;
+            @include sizes (100%, auto);
+            @include font (18px , bold);
+            color: $color-textos;
         }
 
         &--barca-partidos-img{
             background-image: url(../imagenes/crack.png)
         }
 
-        &--card-barca-goles-img{
+        &--barca-goles-img{
             background-image: url(../imagenes/messigoles.png);
         }
     }
 
     .hero{
         &--psg{
-            background-image:           linear-gradient(
+            background-image: linear-gradient(
              0deg,
              rgba(0,0,0,0.5),
              rgba(0,0,0,0.5)
@@ -221,7 +204,7 @@ footer{
         }
 
         &--psg{
-            background-color: colores.$color-background-card;
+            background-color: $color-background-card;
         }
 
         &--psg-goles-img{
@@ -250,7 +233,7 @@ footer{
         }
 
         &--seleccion{
-            background-color: colores.$color-background-card;
+            background-color: $color-background-card;
         }
 
         &--seleccion-goles-img{
@@ -272,35 +255,35 @@ footer{
     }
 
     .form{
+        @include sizes (90%, auto);
         position: relative;
         top: 150px;
-        background-color: colores.$color-textos;
-        width: 90%;
+        background-color: $color-textos;
         margin: auto;
         max-width: 400px;
         border-radius: 1em;
         padding: 3em 1.5em;
 
         &__container{
+            @include sizes (100%, auto);
             margin: auto;
-            width: 100%;
             display: grid;
             gap: 1rem;
             grid-auto-columns: 100%;
         }
 
         &__tittle{
+            @include font (30px , bold);
             text-align: center;
-            font-size: 1.9rem;
             margin-bottom: 0.4rem;
         }
         
         &__input{
-            font-size: 1rem;
+            @include font (16px , bold);
             padding: 0.8em 1em;
             outline: none;
             border: none;
-            border: 1px solid colores.$color-borde-form;
+            border: 1px solid $color-borde-form;
             border-radius: 0.2em;
         }
 
@@ -311,12 +294,10 @@ footer{
         }
 
         &__cta{
-            font-size: 1rem;
-            font-weight: bold;
-            background-color: colores.$color-boton-form;
+            @include font (16px , bold);
+            background-color: $color-boton-form;
             color: #fff;
             border: none;
-            font-weight: 300;
             padding: 0.7em 0;
             border-radius: 0.2em;
             cursor: pointer;
@@ -324,7 +305,7 @@ footer{
         }
 
         &__cta:hover{
-            background-color: colores.$color-boton-hover;
+            background-color: $color-boton-hover;
             transform: scale(1.04);
         }
     }
@@ -332,12 +313,9 @@ footer{
 @media (max-width: 760px){
     .hero{
         &__container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexible ( flex , center , column , center);
+            @include sizes (100%, 100vh);
             text-align: center;
-            height: 100vh;
-            width: 100%;
             background-image: linear-gradient(
                 0deg,
              rgba(0,0,0,0.5),
@@ -346,28 +324,25 @@ footer{
             , url(../imagenes/messifoto.jpg);
             background-size: cover;
             background-position: center center;
-            align-items: center;
             }
 
         &__titulo{
-            font-size: 35px;
-            font-weight: bold;
-            color: colores.$color-textos;
+            @include sizes (30%, auto);
+            @include font (35px , bold);
+            color: $color-textos;
             margin: 30px 0;
-            width: 30%;
         }
 
         &__parrafo{
-            font-size: 15px;
-            font-weight: bold;
-            color: colores.$color-textos;
-            width: 60%;
+            @include sizes (60%, auto);
+            @include font (15px , bold);
+            color: $color-textos;
         }
     }
 
     .galeria{
         &__titulo{
-            font-size: 25px;
+            @include font (25px , 200);
             margin: 20px auto;  
         }
 
@@ -379,111 +354,100 @@ footer{
         }
 
         &__foto{
-            width: 250px;
-            height: 200px;
+            @include sizes (250px, 200px);
         }
 
         &__foto:hover{
             transform: scale(1.02);
             transition-duration: 0.8s;
-            box-shadow:  0 0 0 3px colores.$color-primario
+            box-shadow:  0 0 0 3px $color-primario
         }
     }
 
     .hero{
         &--barcelona{
+            @include sizes (auto, 90vh);
             background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
             )
             ,url(../imagenes/escudobarca.jpg);
-            height: 90vh;
             background-position: center center;
         }
 
         &--titulo{
-            font-size: 20px;
-            width: 100%;
-            align-items: center;
+            @include sizes (100%, auto);
+            @include font (20px , 200);
             font-family: 'IBM Plex Mono', monospace;
         }
     }
 
     .card{
         &__container{
-            display: flex;
             padding: 30px ;
-            justify-content: center;
         }
 
         &__textos{
-            width: 100%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include sizes (100%, auto);
             margin: 0 20px;
         }
 
         &__titulo{
-            color: colores.$color-primario;
-            font-size: 30px;
+            @include font (30px , bold);
+            color: $color-primario;
         }
 
         &__parrafo{
-            font-size: 15px;
-            font-weight: bold;
+            @include font (15px , bold);
         }
     }
 
     .titulos__barcelona{
-        font-size: 15px;
-        font-weight: bold;
+        @include font (15px , bold);
     }
 
     .card--barca{
-        background-color: colores.$color-background-card;
+        background-color: $color-background-card;
     }
 
     .hero--psg{
+        @include sizes (auto, 90vh);
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
         ,url(../imagenes/escudopsg.jpg);
-        height: 90vh;
         background-position: center center; 
     }
 
     .card{
         &--psg{
-            background-color: colores.$color-background-card;
+            background-color: $color-background-card;
         }
 
         &--parrafo-blanco{
-            font-weight: bold;
-            display: flex;
-            color: colores.$color-textos;
-            width: 100%;
+            @include sizes (100%, auto);
+            @include font (15px , bold);
+            color: $color-textos;
         }
     }
 
     .hero--seleccion{
+        @include sizes (auto, 90vh);
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
         ,url(../imagenes/escudoseleccion.jpg);
-        height: 90vh;
         background-position: center center; 
     }
 
     .card{
         &--seleccion{
-            background-color: colores.$color-background-card;
+            background-color:$color-background-card;
         }
 
         &__img{
@@ -491,5 +455,3 @@ footer{
         }
     }
 }
-
-

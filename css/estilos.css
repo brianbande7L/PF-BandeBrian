@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-nav{
+    width: 100%;
+    position: fixed;
+    padding: 18px 0px;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.logo{
+    margin: 0 30px;
+    font-size: 25px;
+}
+.nav-margin{
+    margin: 0 30px;
+    font-size: 17px;
+}
+
+.nav-link li{
+    color: aqua;
+}
+
+.dropdown-color{ 
+    color: #D4AF37;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+footer img{
+    width: 30px;
+    height: 30px;
+    margin: 10px 5px;                                                                                                                                                                                                                                                                                                                                                        
+}
+
+footer{
+    background-color: #f8f9fa;
+    margin: 0 ;
+    z-index: 5;
+}
+
+footer p{
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+footer .conteiner{
+text-align: center;
+}
+
+footer .imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/** HEADER y FOOTER ADAPTADOS A RESPONSIVE**/
+
+   .hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url(../imagenes/messifoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+
+.titulo__hero{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.parrafo__hero{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 60%;
+}
+
+.galeria__container {
+    display: grid;
+}
+
+.galeria__titulo{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 40px auto;   
+}
+
+.galeria__imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 40px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    transition: all .9s;
+}
+
+.foto__galeria{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.foto__galeria:hover{
+    transform: scale(1.05);
+    transition-duration: 0.8s;
+    box-shadow:  0 0 0 5px #D4AF37;
+}
+
+.hero--barcelona{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../imagenes/messihome.jpg);
+}
+
+.titulo--hero{
+    font-size: 50px;
+    width: 100%;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.titulos__barcelona{
+    display: none;
+}
+
+.card__container{
+    display: flex;
+    padding: 100px ;
+    justify-content: center;
+}
+
+.card__textos{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.card__titulo{
+    color: #D4AF37;
+    font-size: 40px;
+}
+
+.card__parrafo{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.card__img{
+    background-image: url(../imagenes/messi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin: 0px 50px;
+}
+
+.card--barca{
+    background-color: rgb(52, 44, 87);
+}
+
+.card--parrafo-blanco{
+    font-weight: bold;
+    display: flex;
+    color: rgb(245,245,245);
+    width: 100%;
+}
+
+.card--barca-partidos-img{
+    background-image: url(../imagenes/crack.png)
+}
+
+
+.card--barca-goles-img{
+    background-image: url(../imagenes/messigoles.png);
+}
+                                   
+.hero--psg{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+     url(../imagenes/messimenupsg3.jpg);
+}
+
+.card--psg-tiulos-img{
+    background-image: url(../imagenes/messititulospsg.png);
+}
+
+
+.card--psg-partidos-img{
+    background-image: url(../imagenes/partidosmessipsg.png);
+}
+
+.card--psg{
+    background-color: rgb(52, 44, 87);
+}
+
+
+.card--psg-goles-img{
+    background-image: url(../imagenes/messigolespsg.jpg);
+}
+
+.hero--seleccion{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+     url(../imagenes/messiseleccionmenu.png);
+}
+
+.card--seleccion-titulos-img{
+    background-image: url(../imagenes/messibesocopa.png);
+}
+
+.card--seleccion{
+    background-color: rgb(52, 44, 87);
+} 
+
+
+.card--seleccion-partidos-img{
+    background-image: url(../imagenes/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
+
+}
+
+
+.card--seleccion-goles-img{
+    background-image: url(../imagenes/messicopamundo.png);
+}
+
+.formulario{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     )
+    ,url(../imagenes/menu-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.form{
+    position: relative;
+    top: 150px;
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3em 1.5em;
+  }
+  
+  .form__container {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 100%;
+  }
+  
+  .form__tittle {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .form__input {
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+  }
+  
+  .form__input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .form__cta {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #089FE0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: 0.7em 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+  }
+  
+  .form__cta:hover {
+    background-color: #4fbceb;
+  }
+
+
+@media(max-width: 760px){
+    .hero__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url(../imagenes/messifoto.jpg);
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+    }
+
+    .titulo__hero{
+        font-size: 35px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        margin: 30px 0;
+        width: 30%;
+    }
+    
+    .parrafo__hero{
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        width: 60%;
+    }
+
+    .galeria__container {
+        display: grid;
+    }
+    
+    .galeria__titulo{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', sans-serif;
+        margin: 20px auto;   
+    }
+    
+    .galeria__imagenes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px 20px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        transition: all .9s;
+    }
+    
+    .foto__galeria{
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .foto__galeria:hover{
+        transform: scale(1.02);
+        transition-duration: 0.8s;
+        box-shadow:  0 0 0 3px #D4AF37;
+    }
+
+    .hero--barcelona{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudobarca.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
+
+    .titulo--hero{
+        font-size: 20px;
+        width: 100%;
+        align-items: center;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .card__container{
+        display: flex;
+        padding: 30px ;
+        justify-content: center;
+    }
+
+    .card__textos{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .card__titulo{
+        color: #D4AF37;
+        font-size: 30px;
+    }
+
+    .card__parrafo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .titulos__barcelona{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .card--barca{
+        background-color: rgb(52, 44, 87);
+    }
+
+    .hero--psg{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudopsg.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
+
+    .card--psg{
+        background-color: rgb(52, 44, 87);
+
+    }
+
+    .card--parrafo-blanco{
+        font-weight: bold;
+        display: flex;
+        color: rgb(245,245,245);
+        width: 100%;
+    }
+
+    .hero--seleccion{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/escudoseleccion.jpg);
+        height: 90vh;
+        background-position: center center; 
+    }
+
+    .card--seleccion{
+        background-color: rgb(52, 44, 87);
+    }
+
+    .card__img{
+        display: none;
+    }
+
+}

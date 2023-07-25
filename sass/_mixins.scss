@@ -1,0 +1,16 @@
+@mixin flexible( $dis , $jus, $direction, $align){
+    display: $dis;
+    justify-content: $jus;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin sizes ($width , $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin font ($size , $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
