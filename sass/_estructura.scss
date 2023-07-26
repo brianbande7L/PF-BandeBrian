@@ -153,9 +153,10 @@ footer{
             @include font (18px , bold);
         }
         &__img{
-            @include sizes (100%, 400px);
+            @include sizes (800px, 400px);
             background-image: url(../imagenes/messi.png);
             background-repeat: no-repeat;
+            background-position: center center;
             background-size: cover;
             margin: 0px 50px;
         }
@@ -307,7 +308,69 @@ footer{
         }
     }
 
-@media (max-width: 760px){
+@media (min-width: 701px) and (max-width: 1000px) {
+    .galeria__imagenes{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px 20px;
+        margin-bottom: 50px;
+    }
+
+    .card{
+        &__container{
+            @include flexible ( flex , center , column , center);
+            padding: 100px ;
+        }
+
+        &__textos{
+            @include flexible ( flex , center , column , center);
+            @include sizes (100%, auto);
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        &__img{
+            @include sizes (550px, 400px);
+            background-image: url(../imagenes/messi.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 50px 0;
+        }
+        &--barca-partidos-img{
+            background-image: url(../imagenes/crack.png)
+        }
+
+        &--barca-goles-img{
+            background-image: url(../imagenes/messigoles.png);
+        }
+
+        &--psg-titulos-img{
+            background-image: url(../imagenes/messititulospsg.png);
+        }
+
+        &--psg-partidos-img{
+            background-image: url(../imagenes/partidosmessipsg.png);
+        }
+
+        &--psg-goles-img{
+            background-image: url(../imagenes/messigolespsg.jpg);
+        }
+
+        &--seleccion-titulos-img{
+            background-image: url(../imagenes/messibesocopa.png);
+        }
+
+        &--seleccion-partidos-img{
+            background-image: url(../imagenes/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
+        }
+
+        &--seleccion-goles-img{
+            background-image: url(../imagenes/messicopamundo.png);
+        }
+}
+}
+
+@media (max-width: 700px){
     .hero{
         &__container{
             @include flexible ( flex , center , column , center);
@@ -452,3 +515,4 @@ footer{
         }
     }
 }
+
