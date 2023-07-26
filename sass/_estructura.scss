@@ -394,7 +394,7 @@ footer{
         }
 
         &__parrafo{
-            @include sizes (60%, auto);
+            @include sizes (80%, 50%);
             @include font (15px , bold);
             color: $color-textos;
         }
