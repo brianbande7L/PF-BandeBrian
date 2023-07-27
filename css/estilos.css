@@ -68,7 +68,7 @@ footer .conteiner{
 text-align: center;
 }
 
-footer .imagenes{
+footer .images{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -88,7 +88,7 @@ footer .imagenes{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    , url(../imagenes/messifoto.jpg);
+    , url(../images/messifoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -122,7 +122,7 @@ footer .imagenes{
     margin: 40px auto;   
 }
 
-.galeria__imagenes{
+.galeria__images{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -150,7 +150,7 @@ footer .imagenes{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(../imagenes/messihome.jpg);
+    ,url(../images/messihome.jpg);
 }
 
 .titulo--hero{
@@ -191,7 +191,7 @@ footer .imagenes{
 
 
 .card__img{
-    background-image: url(../imagenes/messi.png);
+    background-image: url(../images/messi.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -211,12 +211,12 @@ footer .imagenes{
 }
 
 .card--barca-partidos-img{
-    background-image: url(../imagenes/crack.png)
+    background-image: url(../images/crack.png)
 }
 
 
 .card--barca-goles-img{
-    background-image: url(../imagenes/messigoles.png);
+    background-image: url(../images/messigoles.png);
 }
                                    
 .hero--psg{
@@ -225,16 +225,16 @@ footer .imagenes{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-     url(../imagenes/messimenupsg3.jpg);
+     url(../images/messimenupsg3.jpg);
 }
 
 .card--psg-tiulos-img{
-    background-image: url(../imagenes/messititulospsg.png);
+    background-image: url(../images/messititulospsg.png);
 }
 
 
 .card--psg-partidos-img{
-    background-image: url(../imagenes/partidosmessipsg.png);
+    background-image: url(../images/partidosmessipsg.png);
 }
 
 .card--psg{
@@ -243,7 +243,7 @@ footer .imagenes{
 
 
 .card--psg-goles-img{
-    background-image: url(../imagenes/messigolespsg.jpg);
+    background-image: url(../images/messigolespsg.jpg);
 }
 
 .hero--seleccion{
@@ -252,11 +252,11 @@ footer .imagenes{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-     url(../imagenes/messiseleccionmenu.png);
+     url(../images/messiseleccionmenu.png);
 }
 
 .card--seleccion-titulos-img{
-    background-image: url(../imagenes/messibesocopa.png);
+    background-image: url(../images/messibesocopa.png);
 }
 
 .card--seleccion{
@@ -265,13 +265,13 @@ footer .imagenes{
 
 
 .card--seleccion-partidos-img{
-    background-image: url(../imagenes/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
+    background-image: url(../images/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
 
 }
 
 
 .card--seleccion-goles-img{
-    background-image: url(../imagenes/messicopamundo.png);
+    background-image: url(../images/messicopamundo.png);
 }
 
 .formulario{
@@ -280,7 +280,7 @@ footer .imagenes{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
      )
-    ,url(../imagenes/menu-contacto.png);
+    ,url(../images/menu-contacto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -357,7 +357,7 @@ footer .imagenes{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        , url(../imagenes/messifoto.jpg);
+        , url(../images/messifoto.jpg);
         background-size: cover;
         background-position: center center;
         align-items: center;
@@ -391,7 +391,7 @@ footer .imagenes{
         margin: 20px auto;   
     }
     
-    .galeria__imagenes{
+    .galeria__images{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -419,7 +419,7 @@ footer .imagenes{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url(../imagenes/escudobarca.jpg);
+        ,url(../images/escudobarca.jpg);
         height: 90vh;
         background-position: center center; 
     }
@@ -471,7 +471,7 @@ footer .imagenes{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url(../imagenes/escudopsg.jpg);
+        ,url(../images/escudopsg.jpg);
         height: 90vh;
         background-position: center center; 
     }
@@ -494,7 +494,7 @@ footer .imagenes{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url(../imagenes/escudoseleccion.jpg);
+        ,url(../images/escudoseleccion.jpg);
         height: 90vh;
         background-position: center center; 
     }

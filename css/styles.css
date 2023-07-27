@@ -43,7 +43,6 @@ body {
 
 footer {
   background-color: #f8f9fa;
-  margin: 0;
   z-index: 5;
 }
 footer .conteiner {
@@ -55,7 +54,7 @@ footer p {
   margin: 0;
   padding-top: 20px;
 }
-footer .imagenes {
+footer .images {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -75,10 +74,9 @@ footer img {
   width: 100%;
   height: 100vh;
   text-align: center;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messifoto.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/messifoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
 }
 .hero__titulo {
   font-size: 50px;
@@ -106,7 +104,7 @@ footer img {
   font-family: "Bebas Neue", sans-serif;
   margin: 40px auto;
 }
-.galeria__imagenes {
+.galeria__images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -127,7 +125,7 @@ footer img {
 }
 
 .hero--barcelona {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messihome.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/messihome.jpg);
 }
 .hero--titulo {
   width: 100%;
@@ -139,7 +137,8 @@ footer img {
 }
 
 .titulos__barcelona {
-  display: none;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .card__container {
@@ -171,7 +170,7 @@ footer img {
 .card__img {
   width: 800px;
   height: 400px;
-  background-image: url(../imagenes/messi.png);
+  background-image: url(../images/messi.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -188,48 +187,48 @@ footer img {
   color: #fff;
 }
 .card--barca-partidos-img {
-  background-image: url(../imagenes/crack.png);
+  background-image: url(../images/crack.png);
 }
 .card--barca-goles-img {
-  background-image: url(../imagenes/messigoles.png);
+  background-image: url(../images/messigoles.png);
 }
 
 .hero--psg {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messimenupsg3.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/messimenupsg3.jpg);
 }
 
 .card--psg-titulos-img {
-  background-image: url(../imagenes/messititulospsg.png);
+  background-image: url(../images/messititulospsg.png);
 }
 .card--psg-partidos-img {
-  background-image: url(../imagenes/partidosmessipsg.png);
+  background-image: url(../images/partidosmessipsg.png);
 }
 .card--psg {
   background-color: rgb(52, 44, 87);
 }
 .card--psg-goles-img {
-  background-image: url(../imagenes/messigolespsg.jpg);
+  background-image: url(../images/messigolespsg.jpg);
 }
 
 .hero--seleccion {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messiseleccionmenu.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/messiseleccionmenu.png);
 }
 
 .card--seleccion-titulos-img {
-  background-image: url(../imagenes/messibesocopa.png);
+  background-image: url(../images/messibesocopa.png);
 }
 .card--seleccion-partidos-img {
-  background-image: url(../imagenes/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
+  background-image: url(../images/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
 }
 .card--seleccion {
   background-color: rgb(52, 44, 87);
 }
 .card--seleccion-goles-img {
-  background-image: url(../imagenes/messicopamundo.png);
+  background-image: url(../images/messicopamundo.png);
 }
 
 .formulario {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/menu-contacto.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/menu-contacto.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -292,7 +291,7 @@ footer img {
 }
 
 @media (min-width: 701px) and (max-width: 1000px) {
-  .galeria__imagenes {
+  .galeria__images {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 10px 20px;
@@ -318,34 +317,34 @@ footer img {
   .card__img {
     width: 550px;
     height: 400px;
-    background-image: url(../imagenes/messi.png);
+    background-image: url(../images/messi.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 50px 0;
   }
   .card--barca-partidos-img {
-    background-image: url(../imagenes/crack.png);
+    background-image: url(../images/crack.png);
   }
   .card--barca-goles-img {
-    background-image: url(../imagenes/messigoles.png);
+    background-image: url(../images/messigoles.png);
   }
   .card--psg-titulos-img {
-    background-image: url(../imagenes/messititulospsg.png);
+    background-image: url(../images/messititulospsg.png);
   }
   .card--psg-partidos-img {
-    background-image: url(../imagenes/partidosmessipsg.png);
+    background-image: url(../images/partidosmessipsg.png);
   }
   .card--psg-goles-img {
-    background-image: url(../imagenes/messigolespsg.jpg);
+    background-image: url(../images/messigolespsg.jpg);
   }
   .card--seleccion-titulos-img {
-    background-image: url(../imagenes/messibesocopa.png);
+    background-image: url(../images/messibesocopa.png);
   }
   .card--seleccion-partidos-img {
-    background-image: url(../imagenes/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
+    background-image: url(../images/lionel-messi-copa-mundial-fifa_3840x2160_xtrafondos.com.jpg);
   }
   .card--seleccion-goles-img {
-    background-image: url(../imagenes/messicopamundo.png);
+    background-image: url(../images/messicopamundo.png);
   }
 }
 @media (max-width: 700px) {
@@ -357,7 +356,7 @@ footer img {
     width: 100%;
     height: 100vh;
     text-align: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/messifoto.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/messifoto.jpg);
     background-size: cover;
     background-position: center center;
   }
@@ -368,20 +367,22 @@ footer img {
     font-weight: bold;
     color: #fff;
     margin: 30px 0;
+    padding-top: 60px;
   }
   .hero__parrafo {
-    width: 80%;
+    width: 90%;
     height: 50%;
     font-size: 15px;
     font-weight: bold;
     color: #fff;
+    margin: 0 30px;
   }
   .galeria__titulo {
     font-size: 25px;
     font-weight: 200;
     margin: 20px auto;
   }
-  .galeria__imagenes {
+  .galeria__images {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 10px 20px;
@@ -399,7 +400,7 @@ footer img {
   .hero--barcelona {
     width: auto;
     height: 90vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudobarca.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/escudobarca.jpg);
     background-position: center center;
   }
   .hero--titulo {
@@ -436,7 +437,7 @@ footer img {
   .hero--psg {
     width: auto;
     height: 90vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudopsg.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/escudopsg.jpg);
     background-position: center center;
   }
   .card--psg {
@@ -452,7 +453,7 @@ footer img {
   .hero--seleccion {
     width: auto;
     height: 90vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/escudoseleccion.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/escudoseleccion.jpg);
     background-position: center center;
   }
   .card--seleccion {
