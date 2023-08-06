@@ -1,3 +1,4 @@
+/* HEADER */
 .header-nav{
     @include sizes (100%, auto);
     @include font (40px , bold);
@@ -19,6 +20,8 @@
     @include font (18px , bold);
     color: $color-primario;
 }
+
+/* FOOTER */
 
 footer{
     background-color: $color-footer;
@@ -43,7 +46,7 @@ footer{
         margin: 10px 5px;                                                              
     }
 }
-
+  /* HERO INDEX */
 .hero{
     &__container{
         @include flexible ( flex , center , column, center);
@@ -72,7 +75,7 @@ footer{
         color: $color-textos;
     }
 }
-
+ /* GALERIA */
 .galeria{
     &__container {
         display: grid;
@@ -107,7 +110,7 @@ footer{
         box-shadow:  0 0 0 5px $color-primario;
     }
 }
-
+ /* HERO BARCA */
 .hero{
     &--barcelona{
         background-image: linear-gradient(
@@ -129,7 +132,7 @@ footer{
     .titulos__barcelona{
         @include font (15px , bold);
     }
-
+ /* CARDS BARCA */
     .card{
         &__container{
             @include flexible ( flex , center , row , center);
@@ -181,6 +184,7 @@ footer{
         
     }
 
+ /* HERO PSG */
     .hero{
         &--psg{
             background-image: linear-gradient(
@@ -191,7 +195,7 @@ footer{
           url(../imagenes/messimenupsg3.jpg);
         }
     }
-
+    /* CARDS PSG */
     .card{
         &--psg-titulos-img{
             background-image: url(../imagenes/messititulospsg.png);
@@ -209,7 +213,7 @@ footer{
             background-image: url(../imagenes/messigolespsg.jpg);
         }
     }
-
+    /* HERO SELECCION */
     .hero{
         &--seleccion{
             background-image: linear-gradient(
@@ -220,7 +224,7 @@ footer{
              url(../imagenes/messiseleccionmenu.png);
         }
     }
-
+    /* CARDS SELECCION */
     .card{
         &--seleccion-titulos-img{
             background-image: url(../imagenes/messibesocopa.png);
@@ -238,7 +242,7 @@ footer{
             background-image: url(../imagenes/messicopamundo.png);
         }
     }
-
+    /* FORMULARIO CONTACTO */
     .formulario{
         background-image: linear-gradient(
             0deg,
@@ -309,6 +313,8 @@ footer{
         }
     }
 
+/* RESPONSIVE DESIGN TABLET*/
+
 @media (min-width: 701px) and (max-width: 1000px) {
     .galeria__imagenes{
         grid-template-columns: repeat(2, 1fr);
@@ -370,6 +376,8 @@ footer{
         }
     }
 }
+
+/* RESPONSIVE DESIGN MOBILE */
 
 @media (max-width: 700px){
     .hero{
